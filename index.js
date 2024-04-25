@@ -208,13 +208,18 @@ function addTask(event) {
     }
 }
 
+// Toggle sidebar visibility
 function toggleSidebar(show) {
   const sideBar = document.querySelector('.side-bar');
+  const hideSidebarBtnIcon = document.querySelector('#show-side-bar-btn');
+  
   if (show) {
     sideBar.style.display = 'block';
+    hideSidebarBtnIcon.style.display = 'none'; // Hide the icon when sidebar is shown
     localStorage.setItem('showSideBar', 'true');
   } else {
     sideBar.style.display = 'none';
+    hideSidebarBtnIcon.style.display = 'block'; // Show the icon when sidebar is hidden
     localStorage.setItem('showSideBar', 'false');
   }
 }

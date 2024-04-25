@@ -253,13 +253,9 @@ function toggleTheme() {
   if (isLightTheme) {
     body.classList.remove("light-theme");
     localStorage.setItem("theme", "dark");
-    elements.sideLogoImage.src = "./assets/logo-dark.svg";
-    localStorage.setItem("logo", "./assets/logo-dark.svg");
   } else {
     body.classList.add("light-theme");
     localStorage.setItem("theme", "light");
-    elements.sideLogoImage.src = "./assets/logo-light.svg";
-    localStorage.setItem("logo", "./assets/logo-light.svg");
   }
 }
 
